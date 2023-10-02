@@ -1,0 +1,17 @@
+Q).. What is CI? --> Continious Integration 
+
+1) Developers Will commit the code changed on that day then Jenkins WebHook will trigger the code changes from GitHub and Start the process
+2) Process Starts With Building and Run the units tests using Maven Build Tool and Unit Test Cases using TestNG
+3) After Completing the Unit Testing The code will send to Code Quality Testing Using SonarQube to check the security and Vulnerability Issues 
+4) After Checking The code Quality then it moves to Intergration testing 
+5) After Completing the integartion testing the code will be tested the functionality testing whether the newly builded functionality is not affecting the previous functionality 
+6) After Checking the functionality then it will packed as a packages and moved to different environments like Dev,Qa,Staging,Pre-Prod,Production Env 
+
+Q).. What is CD?
+
+1) After Completing the packaging the code then it will be moved to Different environments like Dev,QA,Staging, Production.
+
+Q).. What is CD(Continious Delivery)?
+1) Delivering The Code to Production Environment to use the public ..
+
+git add -A;git commit -m "Adding Message To Terminal";git push -u origin main
