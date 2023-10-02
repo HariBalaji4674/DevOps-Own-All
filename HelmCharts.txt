@@ -1,0 +1,18 @@
+Kubernetes Package Management --> Helm Charts 
+---------------------------------------------
+1) What is Package Management in Kubernetes?
+a) Helm is the Kubernetes package management where we can download and deploy the services based on the requirement
+   Used for minimized changes
+   Helm is the best way to find ,share and use softwarebuilt for kubernetes 
+   
+Three Main Concepts in Helm Package:
+
+1) Helm Charts --> is a helm package which contains all the required resource information about service,tool
+                   configuration,etc. to run an application on kubernetes Cluster 
+
+2) Helm Repository--> The place where all the helm Charts are stored and collected from there we can downoad and use 
+                      use the helm charts for particular application
+
+3) Helm release --> A Helm release is an instance of chart running on kubernetes Cluster.
+					one chart can often be installed many times on the same cluster 
+					

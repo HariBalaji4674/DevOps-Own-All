@@ -1,0 +1,10 @@
+Variables In shell scripting :
+------------------------------
+The most important part in shell script is --> shebang  --> first line in shell script interpreter executble
+
+  ***********      #!/bin/bash     ************
+
+Variables--> the name mentioned for stored conatiner 
+
+x=1,y=2,z=3
+

@@ -1,0 +1,16 @@
+Day 10-- ShellScript & Git Topics
+*********************************
+
+git status --> to check the status
+
+git add -A -->all available file to git init folder
+
+git commit -m "First Commit" --> Committing the files to local Repoository 
+
+git branch -M main --> creating one main branch to the local repository
+
+git remote add origin https://github.com//link --> adding github to the local repo to push the code
+
+git push -u origin main --> pushing the code from local repo to github remote repository
+
+

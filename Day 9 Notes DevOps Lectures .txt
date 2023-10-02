@@ -1,0 +1,26 @@
+Day 9 Notes DevOps Lectures:
+****************************
+
+Some TroubleShooting Commands /Tools in Linuz To check the server:
+
+1. netstat -lntp --> network statistics 
+2. ps -ef | grep <servername> --> Gives the Server name with port number and status of port 
+3. systemctl status servername --> gives status of the server 
+4. top --> Gives the cpu process details along with server details 
+
+
+
+Nginx Server Details :
+**********************
+
+/etc/logrotate.d/nginx ---> This Directory Stores Individual Log Rotation config Files 
+/etc/nginx --> Full Fledged Configuration will be stored in this directory 
+/var/lib/nginx --> 
+/var/log/nginx
+/usr/sbin/nginx
+/usr/lib64/nginx
+/usr/lib64/perl5/vendor_perl/auto/nginx
+/usr/share/licenses/nginx
+/usr/share/doc/nginx
+/usr/share/nginx
+

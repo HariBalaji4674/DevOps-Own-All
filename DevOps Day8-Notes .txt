@@ -1,0 +1,116 @@
+Login Machine Username :centos
+Login Machine Password :DevOps321
+
+****************************************************************************************************************
+Forward Proxy and Reverse Proxy 
+-------------------------------
+Forward Proxy:
+-------------
+
+Proxy Means : a person who is given the power or authority to do something to someone/someother..
+			  Proxy means instead of someone another one is doing something..
+			  
+Proxy Server : A server which contains set of protocols to be set by particular organisation
+
+Forward Proxy Means: --> Moving Forward by accessing the proxy thing 
+					    A Device/Protocols site between the users/clients and the Internet.
+						
+						Every Company using proxy servers to restrict their employees to use unrelated websites over work environment
+						
+Forward Proxy: Clients on the Private Network and Resources / Servers over the public/Internet 					
+Client Infrastruture: Process Outgoing Requests from the clients 
+					  Content Filtering (Censoring,Translation)
+					  Logging
+					  Monotoring
+					  Caching 
+					  Client Anonymization
+						
+						
+Reverse Proxy : A Reverse Proxy is a server which sits behind the firewalls inside the private network and directs client requests to the appropriate Backend Server 
+
+Reverse Proxy: Clients are on the internet and Resources / Servers are on the private network 
+Server Infrastruture:
+---------------------
+					Process Incoming requests
+					Load Balancing 
+					Caching 
+					Authentication
+					Validation
+					Encrypt and Decrypt SSL Communications
+					DDoS Mitigation
+					Stable Client End-Points and Changing Server Instances Endpoints
+					A/B Testing 
+****************************************************************************************************************
+DDoS Protection: The process of successfully protecting the targeted server or network from a distributed denial of service (DDoS) attack..
+
+SSL : Secure Socket Layer 
+	  It is a  protocol provides security/protection to the confidential data following the encryption process over the internet
+		
+		
+		
+****************************************************************************************************************
+
+Extra Configuration Information would always be stored in     /etc/nginx/default.d 
+
+/etc/ --> Configuration Files required for the servers 
+
+/usr/--> users share nginx html files 
+
+============
+MangoDB --> NoSql DataBases
+RDBMS  ---> Relational DataBase Management System 
+SQL DataBases.
+NoSQL --> 
+
+*********
+SQL :
+
+1) Uses Relational DataBase Management System
+2) Vertically Scalable 
+3) Fixed Schema
+4) Can Be Used for complex quiries
+5) Mostly Used for Banking Applications DataBases
+6) Fixed Tables --> rows and columns
+
+
+NoSql:
+
+1) Uses Distributed DataBase Management System
+2) Horizantally Scalabale
+3) Dynamic Schema
+4) Not Used for Complex Quiries
+5) Mostly Used For E-Commerce Applications
+6) Stored as Key-Value Pairs,Document Based,Graph DataBases,Wide-Column Stores
+
+******
+
+What is difference between Statefull and Stateless servers?
+
+Network Protocols:
+Network Protocols for a webbrowser and servers are classified as two types Stateless and Statefull
+
+StateLess Protocols/Servers :
+*****************************
+
+1) State Means Data Stateless --> no storing of data 
+2) It just follows request and response model and does not store any information
+3) stateless protocols are : HTTP,HTTPS,UDP,DNS etc ..
+4) Nginx and API Servers like Node.js , are the StateLess Servers 
+5) Easy To Fetch data Based on the requirement as it does not store any information.
+
+
+Statefull Protocols/servers :
+*****************************
+
+1) It saves the data based on the request send by the client 
+2) it act as  Database Servers 
+3) Statefull Protocols are : File Transfer Protocols,Transmission Control Protocol, TelNet etc ..
+4) MongoDB and AmazonDynamo DB is StateFull Servers where it stores data 
+5) Complex To retrieve data based on the quiries.
+
+
+
+
+
+
+

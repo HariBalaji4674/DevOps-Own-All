@@ -1,0 +1,28 @@
+Linux Interview Questions
+**************************
+After log in message appears --> /etc/motd ----> inside extra configuration file --> message of the day 
+
+DNS Zone File --> A text File in a DNS Server which contains actual representation of the zone and all records for every domain related to zone .
+
+NSlOOKUP --> Name Server Look Up --> 
+            A usefull command used to get the important information from the DNS server 
+			DNS Mapping or querying the DNS names
+			
+dig --> Domain Information Groper
+		Network Admin Tool used to verify and troubleshoot the DNS server Problems
+		Perform DNS Lookups 
+		
+Kill <PID> --> Waits till the process is completed 
+Kill -9 <PID> --> kills immediatly without waiting a second
+
+SubNet --> Network inside a network 
+		   Works efficiently within the network without transfering between unnecesary routes
+		   
+rsyslog --> supports reliable system logging and transferring data between MySql Databases.
+
+Firewall --> Firewall First Monitors the network traffic 
+			 Affter monitoring it will allow or reject based on the access details 
+			 a device/function that allows the traffic between two or more servers and makes it to allow or reject the access 
+Kernel Tuning --> making the changes in parameters without restarting or rebooting the system
+
+
