@@ -8,5 +8,5 @@ if [ $num1 -eq $num2 ]
 then 
     echo " $num1 is Greater than $num2"
 else
-    echo "$num2 is Greater Than $num1
+    echo "$num2 is Greater Than $num1"
 fi
