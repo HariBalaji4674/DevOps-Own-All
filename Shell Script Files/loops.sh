@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#changed Format in the file 
 num1=1
 num2=10
 
