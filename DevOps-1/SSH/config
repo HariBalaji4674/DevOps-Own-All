@@ -1,4 +1,0 @@
-Host github.com
-	HostName github.com
-	user git
-	IdentityFile C:\Users\KRISHNA HARI\DevOps Training\DevOps All Files\DevOps-Own-All\DevOps-1\SSH\ownkeys.pem
