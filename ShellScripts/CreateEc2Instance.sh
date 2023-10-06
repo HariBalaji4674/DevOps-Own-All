@@ -10,7 +10,14 @@ echo "Starting Script"
 #Fierst Create A Arrays Of Servers/Instances
 EC2_NAMES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payments" "dispatch" "web")
 
-for i in "${EC2_NAMES[0]}"
+#Setting Image id below
+Image_id=ami-03265a0778a880afb
+
+#Setting Security Group
+Sec_Group=sg-07af39f9bad6f7e41
+
+
+for i in "${EC2_NAMES[@]}"
 do
     echo "Name : $i"
 done
