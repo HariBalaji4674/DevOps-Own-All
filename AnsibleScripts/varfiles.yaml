@@ -1,7 +1,7 @@
 - name: Taking Variables from Servers
   hosts: localhost
   become: yes
-  var_files:
+  vars_files:
   - details.yaml
   tasks:
   - name: Printing The varibales from var_files
