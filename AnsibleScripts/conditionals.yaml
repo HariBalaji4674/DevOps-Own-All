@@ -12,3 +12,7 @@
   - name: Checking the user created or not and exit status
     ansible.builtin.debug:
       msg: "{{printing_out.rc}}"
+  - name: Create user with user name hari and get the output
+    ansible.builtin.user:
+      name: hari
+    when: printing_out.rc != 0
