@@ -1,1 +1,6 @@
+[nginx]
 172.31.47.145
+
+[nginx:vars]
+nginx_username = Hari Vardhan Reddy
+nginx_db = catagories
