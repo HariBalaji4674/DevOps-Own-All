@@ -1,0 +1,11 @@
+- name: Check the Conditions in List 
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: Check the user of Local Host
+    ansible.builtin.command: 
+      cmd: id
+      register: Id_Local
+  - name: Check The output
+    ansible.builtin.debug:
+      msg: "The id of Locat user is {{Id_Local}}"
