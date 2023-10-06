@@ -8,9 +8,9 @@
   tasks:
   - name: To install Nginx Server
     ansible.builtin.yum:
-      name: Install Nginx
+      name: nginx
       state: latest
   - name: start the service of nginx
     ansible.builtin.service:
-      name: Start nginx server
+      name: nginx
       state: started
