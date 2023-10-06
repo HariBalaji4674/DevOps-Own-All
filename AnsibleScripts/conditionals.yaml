@@ -9,3 +9,6 @@
   - name: Check The output
     ansible.builtin.debug:
       msg: "The id of Locat user is {{printing_out}}"
+  - name: Checking the user created or not and exit status
+    ansible.builtin.debug:
+      msg: "{{printing_out.rc}}"
