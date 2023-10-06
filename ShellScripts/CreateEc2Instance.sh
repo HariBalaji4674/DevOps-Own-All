@@ -16,9 +16,20 @@ Image_id=ami-03265a0778a880afb
 #Setting Security Group
 Sec_Group=sg-07af39f9bad6f7e41
 
+#Setting Instance Type
+Inst_Type=""
+
 
 for i in "${EC2_NAMES[@]}"
 do
-    echo "Name : $i"
+    if [[ $i == "mongodb" || $i == "mysql" ]]
+    then
+        Inst_Type="t3.medium"
+    else
+        Inst_Type="t2.micro"
+    fi
+    echo "Creating $i Instance
+    aws ec2 run-instances --image-id $Image_id  --instance-type $Inst_Type  --security-group-ids $Sec_Group
+    --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]"
 done
 
