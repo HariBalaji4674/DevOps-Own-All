@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAME=Demo1
+NAME=$1
 INSTANCE_TYPE=t2.micro
 SECURITY_GROUP=sg-07af39f9bad6f7e41
 IMAGE_ID=ami-03265a0778a880afb
