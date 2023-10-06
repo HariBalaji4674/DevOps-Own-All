@@ -2,10 +2,10 @@
 #Creating Ec2 Instance Through AWS CLI
 
 #Setting Debug Mode:
-set -x 
+#set -x 
 
 #Stating The Script 
-echo "Starting Script"
+#echo "Starting Script"
 
 #Fierst Create A Arrays Of Servers/Instances
 EC2_NAMES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payments" "dispatch" "web")
@@ -29,6 +29,7 @@ do
         Inst_Type="t2.micro"
     fi
     echo "Creating $i Instance"
-    aws ec2 run-instances --image-id $Image_id --instance-type $Inst_Type --security-group-ids $Sec_Group --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]"
+    aws ec2 run-instances --image-id $Image_id  --instance-type $Inst_Type --security-group-ids $Sec_Group --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]"
 done
+
 
