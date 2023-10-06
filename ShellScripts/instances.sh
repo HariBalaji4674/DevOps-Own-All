@@ -16,7 +16,7 @@ do
     echo "Name of the Server_$i"
     IPAddr=$(aws ec2 run-instances --image-id $Image_id  --instance-type $InstanceType --security-group-ids $Sec_Group --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]" | jq -r '.Instances[0].PrivateIpAddress')
     echo "Created Server : $i --> $IPAddr"
-    $ aws route53 change-resource-record-sets --hosted-zone-id Z07130541SIAXLJRTB4TI --change-batch '
+    aws route53 change-resource-record-sets --hosted-zone-id Z07130541SIAXLJRTB4TI --change-batch '
     {
             "Comment": "CREATE a record ",
             "Changes": [{
