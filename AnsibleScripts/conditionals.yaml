@@ -3,9 +3,9 @@
   become: yes
   tasks:
   - name: Check the user of Local Host
-    ansible.builtin.command:
-      cmd: id hari
-      register: printing_out
+    ansible.builtin.command: id hari 
+    register: printing_out
+    ignore_errors: true
   - name: Check The output
     ansible.builtin.debug:
       msg: "The id of Locat user is {{printing_out}}"
