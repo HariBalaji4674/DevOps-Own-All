@@ -29,7 +29,8 @@ do
         Inst_Type="t2.micro"
     fi
     echo "Creating $i Instance"
-    aws ec2 run-instances --image-id $Image_id  --instance-type $Inst_Type --security-group-ids $Sec_Group --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]"
+    Ip_Address=$(aws ec2 run-instances --image-id $Image_id  --instance-type $Inst_Type --security-group-ids $Sec_Group --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]" | jq -r 'Instance[0].PrivateIpAddress')
+    echo "Created $i = $Ip_Address "
 done
 
 
