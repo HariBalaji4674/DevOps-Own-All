@@ -1,5 +1,5 @@
 #!/bin/bash
-Servers=("web" "mongodb" "catalogue" "redis" "user" "cart" "mysql" "shipping" "rabbitmq" "payment" "dispatch")
+Servers=("webLook" "mongodb" "catalogue" "redis" "user" "cart" "mysql" "shipping" "rabbitmq" "payment" "dispatch")
 InstanceType=""
 Image_id=ami-03265a0778a880afb
 Sec_Group=sg-07af39f9bad6f7e41
@@ -18,13 +18,12 @@ do
     echo "Created Server : $i --> $IPAddr"
     aws route53 change-resource-record-sets --hosted-zone-id Z07130541SIAXLJRTB4TI --change-batch '
     {
-            "Comment": "CREATE a record ",
             "Changes": [{
             "Action": "CREATE",
                         "ResourceRecordSet": {
-                                    "Name": "'$i.$DomainName'",
+                                    "Name": "'$i.$Domain_Name'",
                                     "Type": "A",
-                                    "TTL": 1,
+                                    "TTL": 300,
                                  "ResourceRecords": [{ "Value": "'$IPAddr'"}]
                         }}]
     }
