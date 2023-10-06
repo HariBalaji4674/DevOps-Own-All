@@ -3,7 +3,7 @@ Servers=("web" "mongodb" "catalogue" "redis" "user" "cart" "mysql" "shipping" "r
 InstanceType=""
 Image_id=ami-03265a0778a880afb
 Sec_Group=sg-07af39f9bad6f7e41
-Domain_Name=
+Domain_Name=haridevopspractice.online
 
 for i in "${Servers[0]}"
 do 
