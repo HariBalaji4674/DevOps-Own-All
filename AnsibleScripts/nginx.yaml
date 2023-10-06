@@ -10,7 +10,7 @@
     ansible.builtin.yum:
       name: Install Nginx
       state: latest
-  -name: start the service of nginx
-     ansible.builtin.service:
-       name: Start nginx server
-       state: started
+  - name: start the service of nginx
+    ansible.builtin.service:
+      name: Start nginx server
+      state: started
