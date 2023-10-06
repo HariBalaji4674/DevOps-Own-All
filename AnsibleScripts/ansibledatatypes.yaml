@@ -17,16 +17,16 @@
   tasks:
   - name: Taking Number from PlayLevel
     ansible.builtin.debug:
-      msg: {{name}}
+      msg: "{{name}}"
   - name: Taking Number from PlayLevel
     ansible.builtin.debug:
-      msg: {{id}}
+      msg: "{{id}}"
   - name: Taking Number from PlayLevel
     ansible.builtin.debug:
-      msg: {{IsTrueCondition}}
+      msg: "{{IsTrueCondition}}"
   - name: Taking Number from PlayLevel
     ansible.builtin.debug:
-      msg: {{Experience}}
+      msg: "{{Experience}}"
   - name: Taking Number from PlayLevel
     ansible.builtin.debug:
-      msg: {{namaddresse}}
+      msg: "{{ddresse}}"
