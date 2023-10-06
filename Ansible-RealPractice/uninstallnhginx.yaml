@@ -6,7 +6,3 @@
     ansible.builtin.yum:
       name: nginx
       state: absent
-  - name: get the status of nginx
-    ansible.builtin.service:
-      name: nginx
-      state: stopped
