@@ -29,4 +29,4 @@
       msg: "{{Experience}}"
   - name: Taking Number from PlayLevel
     ansible.builtin.debug:
-      msg: "{{addresse}}"
+      msg: "{{address}}"
