@@ -5,6 +5,6 @@
     Trainer: Hari Vardhan
     date: 10-20-25
   tasks:
-  - name: Printing The messages in the terminal
-    ansible.builtin.debug:
-      msg: " I am Learning {{course}} under the trainer {{Trainer}} from date {{date}}" 
+    - name: Printing The messages in the terminal
+      ansible.builtin.debug:
+        msg: " I am Learning {{course}} under the trainer {{Trainer}} from date {{date}}"
