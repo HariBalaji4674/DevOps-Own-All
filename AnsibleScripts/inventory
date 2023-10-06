@@ -2,5 +2,6 @@
 172.31.47.145
 
 [nginx:vars]
-nginx_username = Hari Vardhan Reddy
-nginx_db = catagories
+nginx_NAME: "Peddireddy"
+nginx_COURSE: "DevOps"
+nginx_ID: 12345
