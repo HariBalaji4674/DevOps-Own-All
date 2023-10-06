@@ -8,7 +8,7 @@
   vars_files:
   - Variablefilesall.yaml
   vars_prompt:
-    NAME: username
+  - NAME: username
     prompt: Enter Your Name
     private: false
   tasks:
