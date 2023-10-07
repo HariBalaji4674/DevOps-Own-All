@@ -1,7 +1,8 @@
 #!/bin/bash
-Servers=("webLook" "mongodb" "catalogue" "redis" "user" "cart" "mysql" "shipping" "rabbitmq" "payment" "dispatch")
+#Servers=("webLook" "mongodb" "catalogue" "redis" "user" "cart" "mysql" "shipping" "rabbitmq" "payment" "dispatch")
+Servers=$@
 InstanceType=""
-Image_id=ami-03265a0778a880afb
+Image_id=ami-067d1e60475437da2
 Sec_Group=sg-07af39f9bad6f7e41
 Domain_Name=haridevopspractice.online
 
