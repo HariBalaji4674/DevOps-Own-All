@@ -1,0 +1,17 @@
+- name: Looping numbers
+  hosts: localhost
+  become: yes
+  tasks:
+  -  name: Print Loops
+     loop:
+       - 1
+       - [2,3]
+       - 4
+       - 6
+  - name: Its Time to Print with_items
+    debug:
+      msg: "{{item}}"
+    when: item == 4
+  - name: Print another number
+    debug: 
+      msg: "{{Change Number}}"
