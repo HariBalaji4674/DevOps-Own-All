@@ -4,5 +4,5 @@
   tasks:
   - name: Creating File in DevOps-Own-All\Ansible-RealPractice
     file: 
-      path: /mongo.repo
+      path: DevOps-Own-All/Ansible-RealPractice/mongo.repo
       state: touch
