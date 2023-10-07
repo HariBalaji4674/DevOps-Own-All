@@ -4,4 +4,8 @@
   tasks:
     - name: Printing Loops
       debug:
-        msg: "Message me please"
+        msg: "{{item.name}}"
+      with_items:
+        - { name: 'Hari', Course: 'Devops'}
+        - { name: 'Vardhan', Course: 'Java'}
+        - { name: 'Reddy', Course: 'Python'}
