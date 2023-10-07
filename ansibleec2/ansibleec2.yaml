@@ -5,6 +5,8 @@
   - name: launching AWS instance using Ansible
     
     ec2:
+      AWS_ACCESS_KEY_ID: AKIA5D5CHLW5CMXFZKIA
+      AWS_ACCESS_KEY: ujlmO2mJxHlzGhdFDT02GfmWCdrsrtr7I9MH90uv
       key_name: N. Virginia
       instance_type: t2.micro
       image: ami-03265a0778a880afb
