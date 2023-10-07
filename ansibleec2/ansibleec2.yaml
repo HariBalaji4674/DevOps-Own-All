@@ -11,5 +11,3 @@
       region: us-east-1
       instancetags:
         name: Demo1
-      AWS_ACCESS_KEY_ID: AKIAZENEKWBQJBWNHVD6
-      AWS_ACCESS_KEY: +qD+zj53n8bujlRhG9oAcvUa9JRkz8YEaPiU8D7z
