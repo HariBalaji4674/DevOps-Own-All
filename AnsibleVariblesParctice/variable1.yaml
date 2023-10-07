@@ -1,0 +1,20 @@
+- name: Variables Checking 
+  hosts: localhost
+  become: yes
+  vars:
+  - name: "Peddireddy"
+  - age: 25
+  - Course: Devops
+  - Address: 
+    - Village: Chiyyapadu 
+    - District: Kadapa District
+    - State: AndhraPradesh 
+    - Pincode: 516355
+  - Mapping_sets:
+      order: cashondeliver
+      itemtype: Laptop
+      date: 12-25-2023
+  tasks:
+  - name: Taking All The Varibles
+    debug: 
+      msg: "{{name}},{{age}},{{Course}},{{Address}},{{Mapping_sets}}"
