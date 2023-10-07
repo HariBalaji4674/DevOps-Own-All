@@ -2,16 +2,11 @@
   hosts: localhost
   become: yes
   tasks:
-  -  name: Print Loops
-     loop:
-       - 1
-       - [2,3]
-       - 4
-       - 6
-  - name: Its Time to Print with_items
+  - name: Print Loops
+    with_items:
+      - {name: 'Tendra', Course: 'java'}
+      - {name: 'Samsung_do', Course: 'Python'}
+      - {name: 'Simboly', Course: 'Ansible'}
+  - name: Printing Loops
     debug:
-      msg: "{{item}}"
-    when: item == 4
-  - name: Print another number
-    debug: 
-      msg: "{{Change Number}}"
+      msg: "{{item.name}} , {{item.Course}}"
