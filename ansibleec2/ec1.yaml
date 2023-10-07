@@ -1,5 +1,0 @@
-- name: Simple Spot Request Creation
-  amazon.aws.ec2_spot_instance:
-    launch_specification:
-      image_id: ami-03265a0778a880afb
-      instance_type: t2.micro
