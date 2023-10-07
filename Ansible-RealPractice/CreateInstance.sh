@@ -1,5 +1,4 @@
 #!/bin/bash
-
 NAME=$1
 INSTANCE_TYPE=t2.micro
 SECURITY_GROUP=sg-07af39f9bad6f7e41
