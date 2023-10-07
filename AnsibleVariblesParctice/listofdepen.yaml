@@ -1,0 +1,6 @@
+- name: list of dependencies
+  hosts: localhost
+  become: yes
+  tasks:
+    yum:
+      name: "{{list_of_packages}}"
