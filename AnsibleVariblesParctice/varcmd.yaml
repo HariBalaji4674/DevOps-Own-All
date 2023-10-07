@@ -1,0 +1,7 @@
+- name: Varible Checking
+  hosts: localhost
+  become: yes
+  tasks: 
+    - name: Testing Cmd prompt 
+      debug:
+        msg: "MY name is {{user}}"
