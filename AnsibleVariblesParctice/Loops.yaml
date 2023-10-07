@@ -4,7 +4,7 @@
   tasks:
   - name: Testing Loops
     debug:
-      msg: "{{items}}"
+      msg: "{{item}}"
     loop:
       - number1
       - number2
