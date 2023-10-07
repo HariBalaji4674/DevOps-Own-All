@@ -1,7 +1,5 @@
-- name: list of dependencies
+- name: Optimal yum
   hosts: localhost
-  become: yes
-  tasks:
-    yum:
-      name: "{{list_of_packages}}"
-      state: present
+  ansible.builtin.yum:
+    name: "{{ list_of_packages }}"
+    state: present
