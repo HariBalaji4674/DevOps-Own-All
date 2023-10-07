@@ -3,4 +3,5 @@
   become: yes
   tasks:
     yum:
-    - name: "{{list_of_packages}}"
+      name: "{{list_of_packages}}"
+      state: present
