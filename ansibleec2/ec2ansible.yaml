@@ -15,9 +15,9 @@
         assign_public_ip: yes
         aws_access_key: AKIAZENEKWBQJBWNHVD6
         Aws_secret_key: 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
-      register: ec2_instance
-      debug: 
-        msg: "{{ec2_instances}}"
+      # register: ec2_instance
+      # debug: 
+      #   msg: "{{ec2_instances}}"
 
     # - name: Add the new EC2 instance to a host group
     #   add_host:
