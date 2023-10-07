@@ -4,4 +4,4 @@
   tasks: 
     - name: Testing Cmd prompt 
       debug:
-        msg: "MY name is {{user}}"
+        msg: MY name is {{user}}
