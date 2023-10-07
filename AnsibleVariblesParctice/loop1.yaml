@@ -2,7 +2,7 @@
   hosts: localhost
   become: yes
   tasks:
-    - name: Print Loops
+    - name: printing out Loops
       with_items:
         - { name: 'Tendra', Course: 'java' }
         - { name: 'Samsung_do', Course: 'Python' }
