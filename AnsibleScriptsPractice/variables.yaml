@@ -1,5 +1,5 @@
 - name: Print Varibles in the terminal
-  hosts: all
+  hosts: localhost
   vars:
     course: DevOps
     Trainer: Hari Vardhan
