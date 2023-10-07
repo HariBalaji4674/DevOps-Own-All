@@ -9,10 +9,7 @@
       instance_type: t2.micro
       image: ami-03265a0778a880afb
       region: us-east-1
-      wait: yes
-      group: Ansible
-      count: 1
-      vpc_subnet_id: default
-      assign_public_ip: yes
-      aws_access_key: AKIAZENEKWBQJBWNHVD6
-      Aws_secret_key: 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
+      instancetags:
+        name: Demo1
+      AWS_ACCESS_KEY_ID: AKIAZENEKWBQJBWNHVD6
+      AWS_ACCESS_KEY: +qD+zj53n8bujlRhG9oAcvUa9JRkz8YEaPiU8D7z
