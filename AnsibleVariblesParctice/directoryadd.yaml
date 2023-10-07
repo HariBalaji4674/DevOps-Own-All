@@ -9,7 +9,9 @@
   - name: Printing output
     debug:
       msg: "{{result}}"
-  #   when: result.rc != 0
-  # - name: Creating User
-  #   user:
-  #     name: hari
+    when: result.rc != 0
+  - name: Creating User
+    file:
+      path: ./hari
+      state: directory
+      mode: '0755' 
