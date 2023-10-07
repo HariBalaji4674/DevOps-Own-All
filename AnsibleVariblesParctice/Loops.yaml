@@ -3,10 +3,10 @@
   become: yes
   tasks:
   - name: Testing Loops
-    debug:
+    user:
       msg: "{{items}}"
-  loop:
-    - number1
-    - number2
-    - number3
-    - number4
+    loop:
+      - number1
+      - number2
+      - number3
+      - number4
