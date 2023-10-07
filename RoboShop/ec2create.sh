@@ -5,7 +5,6 @@ IMAGEID=ami-03265a0778a880afb
 SECURITYGGROUP=sg-079460af07ad6e0fd
 INSTANCETYPE=""
 
-
 for i in "${EC2_NAMES[@]}"
 do
     if [[ $i == "mongodb" || $i == "mysql" ]]
