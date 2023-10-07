@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: Testing Loops
-    user:
+    debug:
       msg: "{{items}}"
     loop:
       - number1
