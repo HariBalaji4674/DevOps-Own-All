@@ -6,7 +6,7 @@
     debug:
       msg: "{{items}}"
   loop:
-  - number1
-  - number2
-  - number3
-  - number4
+    - number1
+    - number2
+    - number3
+    - number4
