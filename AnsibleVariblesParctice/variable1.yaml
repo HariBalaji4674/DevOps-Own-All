@@ -5,12 +5,12 @@
   - name: "Peddireddy"
   - age: 25
   - Course: Devops
-  Address:
-    - Village: Chiyyapadu 
-    - District: Kadapa District
-    - State: AndhraPradesh 
-    - Pincode: 516355
-  Mapping_sets:
+  - Address:
+    - Village 
+    - District
+    - State
+    - Pincode
+  - Mapping_sets:
       order: cashondeliver
       itemtype: Laptop
       date: 12-25-2023
