@@ -1,0 +1,36 @@
+---
+- name: Create EC2 instance
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Launch EC2 instance
+      ec2:
+        #key_name: your_key_pair_name
+        instance_type: t2.micro
+        image: ami-03265a0778a880afb  # Replace with your desired AMI ID
+        region: us-east-1  # Replace with your desired region
+        count: 1
+        wait: yes
+        vpc_subnet_id: default
+        assign_public_ip: yes
+        aws_access_key: AKIAZENEKWBQJBWNHVD6
+        Aws_secret_key: +qD+zj53n8bujlRhG9oAcvUa9JRkz8YEaPiU8D7z
+      register: ec2_instance
+      debug: 
+        msg: "{{ec2_instances}}"
+
+    # - name: Add the new EC2 instance to a host group
+    #   add_host:
+    #     name: "{{ item.public_ip }}"
+    #     groups: launched
+    #   with_items: "{{ ec2_instance.instances }}"
+
+    # - name: Wait for SSH to become available
+    #   wait_for:
+    #     host: "{{ item.public_ip }}"
+    #     port: 22
+    #     state: started
+    #   with_items: "{{ ec2_instance.instances }}"
+
+    #   group: Ansible
+
