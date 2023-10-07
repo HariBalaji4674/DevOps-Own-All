@@ -2,11 +2,6 @@
   hosts: localhost
   become: yes
   tasks:
-    - name: printing out Loops
-      with_items:
-        - { name: 'Tendra', Course: 'java' }
-        - { name: 'Samsung_do', Course: 'Python' }
-        - { name: 'Simboly', Course: 'Ansible' }
     - name: Printing Loops
       debug:
-        msg: "{{item.name}}"
+        msg: "Message me please"
